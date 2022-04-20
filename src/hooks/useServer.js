@@ -1,18 +1,18 @@
 import { useEffect, useMemo, useState } from "react";
 
-// const temp = [
-//     {
-//         id: 1, timestamp: 123, temperature: 20, data: 80
-//     },
-//     {
-//         id: 2, timestamp: 123, temperature: 30, data: 70
-//     },
-// ]
+const temp = [
+    {
+        id: 1, timestamp: 123, temperature: 20, data: 80
+    },
+    {
+        id: 2, timestamp: 123, temperature: 30, data: 70
+    },
+]
 
 const wsServerAddress = 'ws://localhost:8999'
 
 export function useServer() {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState([temp]);
 
     const ws = useMemo(() => {
         const socket = new WebSocket(wsServerAddress);
