@@ -1,0 +1,30 @@
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.tiles {
+  display: flex;
+  gap: 20px;
+}
+
+.tile {
+  flex: auto;
+  padding: 12px 16px;
+  border: 1px solid lightgrey;
+}
+
+.tileTitle {
+  margin-bottom: 4px;
+}
+
+.tileValue {
+  color: grey;
+  font-size: smaller;
+}
+
+.chart {
+  margin: 20px 0 0;
+  border: 1px solid lightgrey;
+}
